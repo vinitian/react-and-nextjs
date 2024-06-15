@@ -15,7 +15,7 @@ event names
 
 - `useState()` : the React hook used to manage state
 
-The first item in the array (`likes`) is the state **`value`**, The second item in the array (`setLikes`) is a **function to update the value**
+The first item in the array (`likes`) is the state **`value`**, The second item in the array (`setLikes`) is a function to **`update`** the value
 
 0 is the initial value of `likes`. (จริงๆ ไม่ต้องเขียนก็ได้ แต่อันนี้น่าจะเหมือน set default
 )
