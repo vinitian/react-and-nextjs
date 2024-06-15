@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <div id=app></div>
+        
+        <!-- react -->
+        <script src=https://unpkg.com/react@18/umd/react.development.js></script>
+        <script src=https://unpkg.com/react-dom@18/umd/react-dom.development.js></script>
+        
+        <!-- javascript compiler to transform JSX -> javascript -->
+        <script src=https://unpkg.com/@babel/standalone/babel.min.js></script>
+        
+        <script type=text/jsx>
+            // normal javascript
+            // const app = document.getElementByIdapp;
+            // const header = document.createElementh1;
+            // const text = kusunoki muu;
+            // const headerContent = document.createTextNodetext;
+            // header.appendChildheaderContent;
+            // app.appendChildheader;
+
+            // react
+            const app = document.getElementById('app');
+            const root = ReactDOM.createRoot(app);
+            root.render(<h1>kusunoki muu</h1>);
+        </script>
+    </body>
+</html>
