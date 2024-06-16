@@ -159,7 +159,8 @@ You can use the names for now since they are currently unique, but it's recommen
 
 - read more about keys and todo's/not to do's: https://react.dev/learn/rendering-lists
 
-
+> [!NOTE]
+> keys are not globally unique. They only specify the position within the parent.
 
 ## Passing JSX as children
 

@@ -1,0 +1,4 @@
+nextjs/node_modules/
+nextjs/package-lock.json
+nextjs/package.json
+nextjs/.next/
