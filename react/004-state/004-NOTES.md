@@ -3,12 +3,29 @@
 
 - https://nextjs.org/learn/react-foundations/updating-state
 
-## Listening to events
+# Listening to events
 
 event names
 - `onClick` for buttons
 - `onChange` for input fields
 - `onSubmit` for forms.
+
+the conventional function name for event handlers are `handleClick`, `handleChange`, `handleSubmit`, etc.
+
+
+
+# Event propagation
+
+Event handlers will also catch events from any children your component might have. We say that an event “bubbles” or “propagates” up the tree: it starts with where the event happened, and then goes up the tree.
+
+e.g. a `<button>` is a child of `<div>`. both components have `onClick` which displays alert(). when the button is clicked, its `onClick` will run first, followed by the parent `<div>`’s `onClick`. You can stop event propogation (to div) by using `e.stopPropagation()` *then* call `alert()`.
+
+- **e.stopPropagation()** stops the event handlers attached to the tags above from firing.
+- **e.preventDefault()** prevents the default browser behavior for the few events that have it.
+
+[react guide](https://react.dev/learn/responding-to-events#event-propagation)
+
+
 
 # Hooks
 = a set of functions allowing you to add additional logic such as **state** to your components
@@ -36,6 +53,22 @@ Note: Unlike props which are passed to components as the first function paramete
 
 [react guide](https://react.dev/learn/preserving-and-resetting-state)
 
+
+# Sharing State Between Components
+
+Sometimes, you want the state of two components to always change together. This is known as **lifting state up**.
+
+To coordinate two children components, you need to “lift their state up” to a parent component in three steps:
+
+1. **move** their state to their common parent.
+2. pass the information down through **props** from their common parent.
+3. pass the **event handlers** down so that the children can change the parent’s state.
+
+When writing a component, consider which information in it should be controlled (via props), and which information should be uncontrolled (via state). But you can always change your mind and refactor later.
+
+- example: see file `lifting-state-up-example.jsx`
+
+[react guide](https://react.dev/learn/sharing-state-between-components)
 
 
 
