@@ -14,3 +14,6 @@ typically react renders on the server, but there are some components that needs 
 to make the a component.jsx file a Client Component, add the React `'use client';` directive at the top of the file. This tells React to render the component on the client.
 
 then, import the component to the main `page.jsx`
+
+# Continue
+to continue learning next.js, please go to this [repo](https://github.com/vinitian/nextjs-notes).
