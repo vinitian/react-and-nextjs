@@ -1,6 +1,7 @@
 # React and Next.js notes
 
 - studying this for CU ENG's Vishnu 22nd event as a frontend developer
+- to continue learning next.js, please go to this [repo](https://github.com/vinitian/nextjs-notes).
 
 > [!TIP]
 > ðə ɡraɪnd ˈnɛvə stɒps
